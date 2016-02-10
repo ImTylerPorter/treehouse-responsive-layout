@@ -13,7 +13,7 @@ body {
   color: #7f7f7f;
   background: #fafafa;
 }
-h1,h2,h3 {
+h1,h2,h3,h4 {
   font-family: 'Roboto', sans-serif;
   color: #4a4a4a;
 }
@@ -39,6 +39,12 @@ a:hover {
   color: #84C441;
 }
 
+.wrapper, .wrapper-skinny{
+  width: 90%;
+  margin:0 auto;
+}
+
+
 .cf:before, .cf:after {
   content: " ";
   display: table;
@@ -56,17 +62,17 @@ a:hover {
 .main-nav{
   width: 100%;
   display: inline-block;
+  text-align: center;
 }
 
 .nav{
   display: block;
-  float: right;
 }
 .nav li {
-  display: inline-block;
   text-transform: uppercase;
   font-family: 'Roboto', sans-serif;
-  margin-left: 38px;  
+  margin-left: 38px; 
+  font-weight: bold; 
 }
 .nav li a{
   color: #4a4a4a;
@@ -79,6 +85,10 @@ a:hover {
 /*-----------------------------------------------
   MAIN
 ------------------------------------------------*/
+  .profile-desc {
+    margin-top: 0;
+  }
+
   .portfolio {
     background: white;
     text-align: center;
@@ -89,11 +99,18 @@ a:hover {
     text-align: center;
   }
   figure {
-    display: inline-block;
-    vertical-align: top;
+      display: inline-block;
+      vertical-align: top;
+      width: 100%;
+      margin: 0 auto 2em;
   }
   figcaption h4 {
     color: #626262;
+  }
+  figcaption {
+    line-height: 1.4em;
+    width: 91%;
+    margin: 0 auto;
   }
 
 /*-----------------------------------------------
@@ -104,43 +121,117 @@ a:hover {
   border-top: 1px solid #e7e7e7;
 }
 
+.footer-bottom h4 {
+  color: #4a4a4a;
+  float: left;
+}
 
+
+.nav-foot {
+  display: none;
+}
+
+.top {
+  float: right;
+  font-weight: bold;
+  margin-top: 5.5%;
+  text-transform: uppercase;
+  color: #4a4a4a;
+}
 
 /*-----------------------------------------------
   Media Queries
 ------------------------------------------------*/
 
-@media (min-width: 1024px){
+@media (min-width: 320px) {
 
-  .wrapper{
-    width: 90%;
-    margin:0 auto;
+  .nav li {
+    display: block;
+    background: white;
+    margin: 0.4em auto;
+    padding: 0.8em 0;
   }
+  p {
+    font-size: 1.2em;
+    line-height: 1.4;
+  }
+
+  header {
+    padding: 10% 0;
+    text-align: center;
+  }
+  header img {
+    width: 70%;
+  }
+  .profile-desc {
+    margin-top: 1em;
+    font-size: 1.1em;
+    line-height: 1.3;
+  }
+  .white{
+    background: white;
+  }
+  figcaption h4{
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  figcaption {
+    font-size: .9em;
+    line-height: 1.5;
+    font-size: 1.1em;
+  }
+
+  footer .wrapper-skinny {
+    margin-bottom: 5em;
+  }
+
+  .footer-bottom h4 {
+    margin: 2.5% 0;
+  }
+  .nav-foot {
+    margin: 2.5% 0 !important;
+  }
+
+  footer h2,
+  .portfolio h2{
+    font-size: .9em;
+    margin: 3em 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+}
+
+
+@media (min-width: 768px) {
+
   .wrapper-skinny {
-    width: 50%;
+    width: 80%;
     margin: 0 auto;
   }
-
-  .main-nav {
-    min-height: 140px;
-  }
   .main-nav h1 {
-    float: left;
-    margin-top: 4%;
+    margin: 1.9em 0 1em;
+    font-size: 1.7em;
   }
-  .nav{
-    margin-top: 5%;
+  .nav {
+    margin-top: 3.2%;
+  }
+
+  .nav-foot {
+    float: right;
   }
   .nav li {
-    margin-left: 38px; 
-    font-size: 1em;
-    font-weight: bold; 
-
+    font-size: .95em;
+    display: inline-block;
+    background: transparent;
+    margin: 0 0 0 38px;
   }
-
-
-  header{
-    margin-bottom: 3.8em;
+  .nav li:nth-child(1) {
+    margin: 0;
+  }
+  header {
+    padding: 6.5% 0 0;
+    text-align: left;
   }
   .profile-image {
     float: right;
@@ -150,52 +241,93 @@ a:hover {
     float: left;
     width: 60%;
     font-size: 1.3em;
+  }
+
+
+  figure {
+    width: 49.3%;
+    margin-right: .3em;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 2em;
+  }
+  figure:nth-child(3), figure:nth-child(5), figure:nth-child(7)  {
+    margin-right: 0;
+  }
+
+  .nav-foot{
+    font-size: .9em;
+    font-weight: bold;
+    display: block;
+  }
+  .nav-foot li {
+    margin-left: 20px !important;
+  }
+  .footer-bottom h4 {
+    margin-top: 3.5%;
+  }
+
+  .contact-desc {
+    font-size: 1.4em;
+  }
+
+  .top {
+    display: none;
+  }
+
+
+}
+
+
+@media (min-width: 1024px){
+
+  .wrapper-skinny {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .main-nav h1 {
+    float: left;
+    margin-top: 6%;
+  }
+  .nav {
+    float: right;
+    margin-top: 6.2%;
+  }
+
+  .nav li {
+    margin-left: 38px; 
+    font-weight: bold; 
 
   }
 
-  footer h2,
-  .portfolio h2{
-    font-size: .8em;
-    margin: 3.8em 0;
-    text-align: center;
-    text-transform: uppercase;
+
+  header{
+    margin-bottom: 3.8em;
+    padding: 2.5% 0 0;
+
   }
+
+  .profile-image {
+    float: right;
+    width: 40%;
+  }
+  .profile-desc {
+    float: left;
+    width: 55%;
+    font-size: 1.3em;
+
+  }
+
 
   figure {
     width: 30%;
     margin: 1em .5em;
   }
-  figcaption h4{
-    font-size: 1.2em;
-    font-weight: normal;
-  }
-  figcaption {
-    font-size: .9em;
-    line-height: 1.5;
-  }
-
-  footer .wrapper-skinny {
-    margin-bottom: 5em;
-  }
   footer .main-nav {
     min-height: 0;
   }
   .contact-desc {
-    margin-bottom: 3.8em;
-  }
-
-  .footer-bottom h4 {
-    color: #4a4a4a;
-    float: left;
-    margin-top: 3.5%;
-  }
-
-  .footer-bottom .nav {
-    margin-top: 3.5%;
-  }
-
-  .top {
-    display: none;
+    margin-bottom: 2.8em;
   }
 
 
