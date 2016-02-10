@@ -4,25 +4,30 @@
     <meta charset="utf-8">
     <title>Treehouse Responsive Layout</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,600,700,500' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <div class="main-nav">
-        <ul class="nav">
-          <li class="name"><a href="index.html">Tyler Porter</a></li>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="portfolio.html">Porfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </div>
+    <nav class="main-nav cf">
+      <div class="wrapper">
+        <h1>Tyler Porter</h1>
+          <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Porfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+      </div>
+    </nav>
     <header>
-      <img src="images/responsive-layout-profile.png" class="profile-image" />
-      <p class="profile-desc">Hi, I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
+      <div class="wrapper cf">
+        <img src="images/responsive-layout-profile.png" class="profile-image" />
+        <p class="profile-desc">Hi, I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
+      </div>
     </header>
     <main> 
-      <div class="wrapper">
+      <div class="wrapper cf portfolio">
         <h2>Portfolio</h2>
         <figure>
           <img src="images/portfolio-1.png" alt="Marketing Page">
@@ -51,16 +56,23 @@
       </div> <!--.wrapper-->
     </main>
     <footer>
-      <div class="wrapper">
+      <div class="wrapper-skinny center">
       <h2>Contact</h2>
-        <h4>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</h4>
-        <p>Phone <a href="tel:205-789-2008">205.789.2008</a></p>
-        <p>Email <a href="mailto:hello@cleverladder.com">hello@cleverladder.com</a></p>
+        <p class="contact-desc">If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+        <p>Phone <a href="tel:205-789-2008"><b>205.789.2008</b></a></p>
+        <p>Email <a href="mailto:hello@cleverladder.com"><b>hello@cleverladder.com</b></a></p>
       </div>
-      <div class="footer-bottom">
-        <a href="#" class="name-footer">Tyler Porter</a>
-        <a href="#" class="top">Back to top</a>
-      </div>
+      <nav class="main-nav cf footer-bottom">
+        <div class="wrapper">
+          <h4>Tyler Porter</h4>
+          <a href="#" class="top">Back to top</a>
+            <ul class="nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="portfolio.html">Porfolio</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
     </footer>
   </body>
 </html>
