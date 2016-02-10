@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Treehouse Responsive Layout</title>
+    <link rel="icon" 
+          type="image/png" 
+          href="images/fav.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -12,21 +15,21 @@
   <body>
     <nav class="main-nav cf">
       <div class="wrapper">
-        <h1>Student Name</h1>
+        <h1>Tyler Porter</h1>
           <ul class="nav">
             <li><a href="index.html">Home</a></li>
-            <li><a href="portfolio.html">Porfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#portfolio">Porfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
       </div>
     </nav>
-    <header>
+    <header id="home">
       <div class="wrapper cf">
-        <img src="images/responsive-layout-profile.png" class="profile-image" />
+        <img src="images/tp.jpg" class="profile-image" />
         <p class="profile-desc">Hi, I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
       </div>
     </header>
-    <main class="white"> 
+    <main class="white" id="portfolio"> 
       <div class="wrapper cf portfolio">
         <h2>Portfolio</h2>
         <figure>
@@ -55,7 +58,7 @@
         </figure>                
       </div> <!--.wrapper-->
     </main>
-    <footer>
+    <footer id="contact">
       <div class="wrapper-skinny center">
       <h2>Contact</h2>
         <p class="contact-desc">If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
@@ -65,11 +68,11 @@
       <nav class="main-nav cf footer-bottom">
         <div class="wrapper">
           <h4>Tyler Porter</h4>
-          <a href="#" class="top">Back to top</a>
+          <a href="index.html" class="top">Back to top</a>
             <ul class="nav nav-foot">
               <li><a href="index.html">Home</a></li>
-              <li><a href="portfolio.html">Porfolio</a></li>
-              <li><a href="contact.html">Contact</a></li>
+              <li><a href="#portfolio">Porfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
