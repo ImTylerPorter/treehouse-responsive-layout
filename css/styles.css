@@ -38,7 +38,6 @@ a {
 a:hover {
   color: #84C441;
 }
-
 .wrapper, .wrapper-skinny{
   width: 90%;
   margin:0 auto;
@@ -47,7 +46,6 @@ a:hover {
   content: " ";
   display: table;
 }
-
 .cf:after {
   clear: both;
 }
@@ -82,44 +80,43 @@ a:hover {
 /*-----------------------------------------------
   MAIN
 ------------------------------------------------*/
-  .profile-image {
-    background: #ededed;
-  }
-  .profile-desc {
-    margin-top: 0;
-  }
+.profile-image {
+  background: #ededed;
+}
+.profile-desc {
+  margin-top: 0;
+}
+.portfolio {
+  background: white;
+  text-align: center;
+  padding-bottom: 3.5em;
+}
+.portfolio h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+figure {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  margin: 0 auto 2em;
+}
+figure img {
+  transition: all .5s ease-in-out;
+}
+figure img:hover {
+  transform: scale(1) rotate(-2deg);
+  border-radius: 1em;
+}
 
-  .portfolio {
-    background: white;
-    text-align: center;
-    padding-bottom: 3.5em;
-  }
-  .portfolio h2 {
-    text-transform: uppercase;
-    text-align: center;
-  }
-  figure {
-    display: inline-block;
-    vertical-align: top;
-    width: 100%;
-    margin: 0 auto 2em;
-  }
-  figure img {
-    transition: all .5s ease-in-out;
-  }
-  figure img:hover {
-    transform: scale(1) rotate(-2deg);
-    border-radius: 1em;
-  }
-
-  figcaption h4 {
-    color: #626262;
-  }
-  figcaption {
-    line-height: 1.4em;
-    width: 91%;
-    margin: 0 auto;
-  }
+figcaption h4 {
+  color: #626262;
+}
+figcaption {
+  line-height: 1.4em;
+  width: 91%;
+  margin: 0 auto;
+}
 
 /*-----------------------------------------------
   Footer
@@ -133,12 +130,9 @@ a:hover {
   color: #4a4a4a;
   float: left;
 }
-
-
 .nav-foot {
   display: none;
 }
-
 .top {
   float: right;
   font-weight: bold;
@@ -163,7 +157,6 @@ a:hover {
     font-size: 1.2em;
     line-height: 1.4;
   }
-
   header {
     padding: 10% 0;
     text-align: center;
@@ -188,7 +181,6 @@ a:hover {
     line-height: 1.5;
     font-size: 1.1em;
   }
-
   footer .wrapper-skinny {
     margin-bottom: 5em;
   }
@@ -199,7 +191,6 @@ a:hover {
   .nav-foot {
     margin: 2.5% 0 !important;
   }
-
   footer h2,
   .portfolio h2{
     font-size: .9em;
@@ -224,7 +215,6 @@ a:hover {
   .nav {
     margin-top: 3.2%;
   }
-
   .nav-foot {
     float: right;
   }
@@ -251,8 +241,6 @@ a:hover {
     width: 60%;
     font-size: 1.3em;
   }
-
-
   figure {
     width: 49.3%;
     margin-right: .3em;
@@ -302,19 +290,13 @@ a:hover {
     float: right;
     margin-top: 6.2%;
   }
-
   .nav li {
     margin-left: 38px; 
     font-weight: bold; 
-
   }
-
-
   header{
     padding: 2.5% 0 0;
-
   }
-
   .profile-image {
     float: right;
     width: 40%;
@@ -323,12 +305,10 @@ a:hover {
     float: left;
     width: 55%;
     font-size: 1.3em;
-
   }
   .white{
     background: transparent;
   }
-
   figure {
     width: 30%;
     margin: 1em .5em;
